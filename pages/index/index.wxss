@@ -1,0 +1,73 @@
+.index-contaner {
+  width: 100%;
+}
+.index-contaner .header-search {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+.index-contaner .header-search .search-box {
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+}
+.index-contaner .header-search .search-box span:nth-child(1) {
+  color: #cccccc;
+  margin: 0 5px;
+}
+.index-contaner .header-search .search-box span:nth-child(2) {
+  color: #cccccc;
+}
+.index-contaner .index-content {
+  width: 100%;
+  padding: 0 16rpx;
+}
+.index-contaner .index-content .index-group {
+  width: 100%;
+}
+.index-contaner .index-content .index-group .group-title {
+  width: 100%;
+  line-height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.index-contaner .index-content .index-group .group-title .title-tip {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.index-contaner .index-content .index-group .group-title .title-tip span:nth-child(1) {
+  color: #1b1818;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+.index-contaner .index-content .index-group .group-title .title-tip span:nth-child(2) {
+  color: #e59a69;
+}
+.index-contaner .index-content .index-group .group-title span {
+  font-size: 24rpx;
+  color: #ccc;
+}
+.index-contaner .index-content .index-choose {
+  width: 100%;
+}
+.index-contaner .index-content .index-choose .choose-title {
+  line-height: 70rpx;
+}
+.index-contaner .index-content .index-choose .choose-title span:nth-child(1) {
+  color: #1b1818;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+.index-contaner .index-content .index-choose .choose-title span:nth-child(2) {
+  color: #aaacab;
+  font-size: 24rpx;
+  margin-left: 40rpx;
+}

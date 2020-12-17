@@ -1,0 +1,36 @@
+<view class="user">
+    <view class="header">
+        <view id="avatar">
+            <image src="../../images/1.png" id="avatar"></image>
+        </view>
+        <label for="avatar">点击登录</label>
+    </view>
+    <view class="member">
+        <view class="member-left-title">
+            <view class="left-title">
+                <span>精选会员</span>
+                <span>优选好货低至7折，任你选</span>
+            </view>
+        </view>
+        <view class="member-right-button">
+            <view class="right-button">
+                <span>开通享特权></span>
+            </view>
+        </view>
+    </view>
+
+    <view class="order">
+        <view class="order-title">
+            <span>我的订单</span>
+            <span>全部订单></span>
+        </view>
+        <item-tab></item-tab>
+    </view>
+
+    <view class="authorization">
+        <span>找不到订单和优惠卷？绑定手机号试试</span>
+        <view class="auth-btn">
+            <span>立即绑定</span>
+        </view>
+    </view>
+</view>

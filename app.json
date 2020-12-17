@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0011",
+    "navigationBarTitleText": "宝宝精选",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/uindex.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/ucategory.png",
+        "selectedIconPath": "images/category.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "首页",
+        "iconPath": "images/ucart.png",
+        "selectedIconPath": "images/cart.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "首页",
+        "iconPath": "images/umy.png",
+        "selectedIconPath": "images/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

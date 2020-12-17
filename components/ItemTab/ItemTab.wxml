@@ -1,0 +1,20 @@
+<view class="index-tabs">
+    <view class="tabs-box">
+        <view class="tab-item">
+            <image src="../../images/1.png" alt="" />
+            <span>美食生鲜</span>
+        </view>
+        <view class="tab-item">
+            <image src="../../images/1.png" alt="" />
+            <span>美食生鲜</span>
+        </view>
+        <view class="tab-item">
+            <image src="../../images/1.png" alt="" />
+            <span>美食生鲜</span>
+        </view>
+        <view class="tab-item">
+            <image src="../../images/1.png" alt="" />
+            <span>美食生鲜</span>
+        </view>
+    </view>
+</view>

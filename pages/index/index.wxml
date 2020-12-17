@@ -1,0 +1,33 @@
+<!-- index.wxml -->
+<view class="index-contaner">
+    <view class="header-search">
+        <span>分类</span>
+        <view class="search-box">
+            <span class="iconfont icon-soushuo"></span>
+            <span>搜索朋友圈的好货</span>
+        </view>
+        <span>消息</span>
+    </view>
+    <item-tab></item-tab>
+    <view class="index-content">
+        <view class="index-group">
+            <view class="group-title">
+                <view class="title-tip">
+                    <span>今日必拼</span>
+                    <span>xxx 刚拼团成功</span>
+                </view>
+                <span>更多></span>
+            </view>
+           <goods-item></goods-item>
+        </view>
+        <view class="index-choose">
+            <view class="choose-title">
+                <span>精挑细选</span>
+                <span>人工优选好物</span>
+            </view>
+            <choose-goods-item></choose-goods-item>
+            <choose-goods-item></choose-goods-item>
+            <choose-goods-item></choose-goods-item>
+        </view>
+    </view>
+</view>

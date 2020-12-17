@@ -1,0 +1,104 @@
+.user {
+  width: 100%;
+  padding: 0 20rpx;
+}
+.user .header {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+}
+.user .header #avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.user .header label {
+  font-size: 36rpx;
+  font-weight: 800;
+  margin-left: 30rpx;
+}
+.user .member {
+  width: 100%;
+  height: 180rpx;
+  background: #373632;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.user .member .member-left-title {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user .member .member-left-title .left-title {
+  height: 70%;
+  font-size: 36rpx;
+  font-weight: 800;
+  color: #fff4da;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.user .member .member-left-title .left-title span:nth-child(2) {
+  color: #9a9688;
+  font-size: 28rpx;
+}
+.user .member .member-right-button {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user .member .member-right-button .right-button {
+  border-radius: 30rpx;
+  background: #e7d1a7;
+  padding: 8rpx 18rpx;
+}
+.user .order {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.user .order .order-title {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  padding: 28rpx 25rpx;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+.user .order .order-title span:nth-child(1) {
+  font-size: 36rpx;
+  font-weight: 800;
+}
+.user .order .order-title span:nth-child(2) {
+  font-size: 28rpx;
+  color: #828383;
+}
+.user .authorization {
+  width: 100%;
+  height: 120rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.user .authorization span {
+  color: #515151;
+}
+.user .authorization .auth-btn {
+  border-radius: 30rpx;
+  padding: 10rpx 30rpx;
+  border: 1rpx red solid;
+}
+.user .authorization .auth-btn span {
+  color: red;
+}
