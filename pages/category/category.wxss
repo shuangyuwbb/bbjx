@@ -1,1 +1,88 @@
-/* pages/category/category.wxss */
+.category {
+  width: 100%;
+}
+.category .header-search {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+.category .header-search .search-box {
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+}
+.category .header-search .search-box span:nth-child(1) {
+  color: #cccccc;
+  margin: 0 5px;
+}
+.category .header-search .search-box span:nth-child(2) {
+  color: #cccccc;
+}
+.category .category-content {
+  width: 100%;
+  display: flex;
+}
+.category .category-content .catogory-left {
+  width: 200rpx;
+  height: calc(100vh - 80rpx);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.category .category-content .catogory-left .element::-webkit-scrollbar {
+  display: none;
+}
+.category .category-content .catogory-left .left-button {
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+}
+.category .category-content .catogory-left .left-button span {
+  color: #666666;
+}
+.category .category-content .catogory-left .left-button .active {
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  background-color: #08a9b8;
+  color: #ffffff;
+}
+.category .category-content .catogory-right {
+  flex: 1;
+  height: calc(100vh - 80rpx);
+  overflow-y: scroll;
+}
+.category .category-content .catogory-right .right-goods {
+  width: 94%;
+  margin: 15rpx 20rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.category .category-content .catogory-right .right-goods .goods-title {
+  width: 100%;
+  padding: 20rpx 0 0 20rpx;
+}
+.category .category-content .catogory-right .right-goods .goods-title span {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+.category .category-content .catogory-right .right-goods:nth-child(1) {
+  margin: 0 20rpx 20rpx 20rpx;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+}
+.category .category-content .catogory-left::-webkit-scrollbar {
+  display: none;
+}
+.category .category-content .catogory-left::-webkit-scrollbar {
+  display: none;
+}

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "input-search": "../../components/InputButton/InputButton",
+    "item-tab": "../../components/ItemTab/ItemTab"
+  }
 }

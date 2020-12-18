@@ -1,2 +1,34 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category">
+    <view class="header-search">
+        <view class="search-box">
+            <span class="iconfont icon-soushuo"></span>
+            <span>搜索朋友圈的好货</span>
+        </view>
+    </view>
+    <!-- 分类列表 -->
+    <view class="category-content">
+        <view class="catogory-left">
+            <view class="left-button" 
+            wx:for="{{dataContent}}" 
+            wx:key="index" 
+            data-id="{{item.id}}" 
+            bindtap="handleSelection">
+                <span class="{{item.id === currentIndex ? 'active' : ''}}  ">{{item.title}}</span>
+            </view>
+        </view>
+        <scroll-view 
+            class="catogory-right" 
+            scroll-y
+            bindscroll="handleScroll"
+            scroll-into-view="{{toView}}"
+            show-scrollbar="true"
+            scroll-with-animation="true">
+            <view class="right-goods" wx:for="{{dataContent}}" wx:key="index" id="bbjx{{item.id}}">
+                <view class="goods-title">
+                    <span>{{item.title}}</span>
+                </view>
+                <item-tab tabs="{{item.tabs}}"></item-tab>
+            </view>
+        </scroll-view>
+    </view>
+</view>

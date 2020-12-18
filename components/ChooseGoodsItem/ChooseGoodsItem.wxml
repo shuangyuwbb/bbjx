@@ -1,18 +1,18 @@
 <view class="choose-content">
     <view class="choose-picture">
-        <image src="../../images/2.png" />
+        <image src="{{data.url}}" />
     </view>
     <view class="choose-info">
         <view class="top">
-            <p>LG锐眼润膏洗发水 头皮专户人参韧养 250ml/支 百草植物 毫无鼻腔</p>
+            <p>{{data.text}}</p>
             <p>
-                <span>100%好评</span>
-                <span>人参韧养</span>
+                <span>{{data.hot}}</span>
+                <span>{{data.label}}</span>
             </p>
         </view>
         <view class="bottom-price">
-            <span>￥29.9</span>
-            <span>立减</span>
+            <span>￥{{data.price}}</span>
+            <span>{{data.tip}}</span>
         </view>
     </view>
 </view>

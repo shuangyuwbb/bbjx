@@ -2,6 +2,7 @@
   "usingComponents": {
     "choose-goods-item": "../../components/ChooseGoodsItem/ChooseGoodsItem",
     "goods-item": "../../components/GoodsItem/GoodsItem",
-    "item-tab": "../../components/ItemTab/ItemTab"
+    "item-tab": "../../components/ItemTab/ItemTab",
+    "input-search": "../../components/InputButton/InputButton"
   }
 }

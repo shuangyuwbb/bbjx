@@ -8,7 +8,7 @@
         </view>
         <span>消息</span>
     </view>
-    <item-tab></item-tab>
+    <item-tab tabs="{{tabs}}"></item-tab>
     <view class="index-content">
         <view class="index-group">
             <view class="group-title">
@@ -18,16 +18,14 @@
                 </view>
                 <span>更多></span>
             </view>
-           <goods-item></goods-item>
+            <goods-item data="{{hotGoods}}"></goods-item>
         </view>
         <view class="index-choose">
             <view class="choose-title">
                 <span>精挑细选</span>
                 <span>人工优选好物</span>
             </view>
-            <choose-goods-item></choose-goods-item>
-            <choose-goods-item></choose-goods-item>
-            <choose-goods-item></choose-goods-item>
+            <choose-goods-item wx:for="{{goods}}" data="{{item}}" wx:key="index"></choose-goods-item>
         </view>
     </view>
 </view>

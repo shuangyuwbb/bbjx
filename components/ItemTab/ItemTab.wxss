@@ -3,17 +3,19 @@
 }
 .index-tabs .tabs-box {
   width: 100%;
-  height: 200rpx;
   display: flex;
-  justify-content: space-around;
+  padding: 20rpx 0;
+  margin-right: 20rpx;
   align-items: center;
   background-color: #fff;
+  flex-wrap: wrap;
 }
 .index-tabs .tabs-box .tab-item {
   width: 160rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20rpx;
 }
 .index-tabs .tabs-box .tab-item image {
   width: 100rpx;

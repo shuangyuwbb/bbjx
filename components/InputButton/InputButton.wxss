@@ -1,0 +1,16 @@
+.search-box {
+  width: 80%;
+  flex: 1;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+}
+.search-box span:nth-child(1) {
+  color: #cccccc;
+  margin: 0 5px;
+}
+.search-box span:nth-child(2) {
+  color: #cccccc;
+}

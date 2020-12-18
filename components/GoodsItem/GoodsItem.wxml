@@ -1,26 +1,10 @@
 <view class="group-content">
-    <view class="group-item">
-        <image src="../../images/2.png" />
-        <span class="item-title">烟台黄金内有富士苹果</span>
+    <view class="group-item" wx:for="{{data}}" wx:key="index">
+        <image src="{{item.url}}" />
+        <span class="item-title">{{item.text}}</span>
         <view class="item-price">
-            <span>￥ 19.19</span>
-            <span>￥ 19.19</span>
-        </view>
-    </view>
-    <view class="group-item">
-        <image src="../../images/2.png" />
-        <span class="item-title">烟台黄金内有富士苹果</span>
-        <view class="item-price">
-            <span>￥ 19.19</span>
-            <span>￥ 19.19</span>
-        </view>
-    </view>
-    <view class="group-item">
-        <image src="../../images/2.png" />
-        <span class="item-title">烟台黄金内有富士苹果</span>
-        <view class="item-price">
-            <span>￥ 19.19</span>
-            <span>￥ 19.19</span>
+            <span>￥ {{item.price}}</span>
+            <span>￥ {{item.old_price}}</span>
         </view>
     </view>
 </view>

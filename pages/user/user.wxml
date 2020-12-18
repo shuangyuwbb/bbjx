@@ -24,7 +24,7 @@
             <span>我的订单</span>
             <span>全部订单></span>
         </view>
-        <item-tab></item-tab>
+        <item-tab tabs="{{tabs}}"></item-tab>
     </view>
 
     <view class="authorization">

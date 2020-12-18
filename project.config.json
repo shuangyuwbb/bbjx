@@ -62,6 +62,12 @@
         {
           "name": "个人主页",
           "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "分类页面",
+          "pathName": "pages/category/category",
           "scene": null
         }
       ]

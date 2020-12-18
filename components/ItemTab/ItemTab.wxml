@@ -1,20 +1,9 @@
 <view class="index-tabs">
     <view class="tabs-box">
-        <view class="tab-item">
-            <image src="../../images/1.png" alt="" />
-            <span>美食生鲜</span>
-        </view>
-        <view class="tab-item">
-            <image src="../../images/1.png" alt="" />
-            <span>美食生鲜</span>
-        </view>
-        <view class="tab-item">
-            <image src="../../images/1.png" alt="" />
-            <span>美食生鲜</span>
-        </view>
-        <view class="tab-item">
-            <image src="../../images/1.png" alt="" />
-            <span>美食生鲜</span>
+        <view class="tab-item" wx:for="{{tabs}}" wx:key="index">
+            <span wx:if="{{type === 'text'}}">{{item.value}}</span>
+            <image wx:else src="{{item.url}}" alt="" />
+            <span>{{item.text}}</span>
         </view>
     </view>
 </view>
