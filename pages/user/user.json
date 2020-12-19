@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "item-tab": "../../components/ItemTab/ItemTab"
+    "item-tab": "../../components/ItemTab/ItemTab",
+    "goods-list": "../../components/GoodsList/GoodsList"
   }
 }

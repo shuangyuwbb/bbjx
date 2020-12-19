@@ -90,6 +90,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30rpx;
+  margin-bottom: 20rpx;
 }
 .user .authorization span {
   color: #515151;
@@ -101,4 +102,28 @@
 }
 .user .authorization .auth-btn span {
   color: red;
+}
+.user .wallet {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.user .wallet .wallet-title {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  padding: 28rpx 25rpx;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+.user .wallet .wallet-title span {
+  font-size: 36rpx;
+  font-weight: 800;
+}
+.user .selection .selection-title {
+  text-align: center;
+  line-height: 60rpx;
 }
