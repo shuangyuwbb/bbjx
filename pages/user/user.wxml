@@ -33,4 +33,25 @@
             <span>立即绑定</span>
         </view>
     </view>
+
+    <view class="wallet">
+        <view class="wallet-title">
+            <span>我的钱包</span>
+        </view>
+        <item-tab></item-tab>
+    </view>
+
+    <view class="wallet">
+        <view class="wallet-title">
+            <span>我的工具</span>
+        </view>
+        <item-tab></item-tab>
+    </view>
+
+    <view class="selection">
+        <view class="selection-title">
+            <span>直播爆款精选</span>            
+        </view>
+        <goods-list></goods-list>
+    </view>
 </view>

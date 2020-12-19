@@ -1,0 +1,47 @@
+.goods-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.goods-content .goods-item {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.goods-content .goods-item .picture {
+  width: 100%;
+  height: 320rpx;
+}
+.goods-content .goods-item .title-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+}
+.goods-content .goods-item .title-price p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods-content .goods-item .title-price .price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+.goods-content .goods-item .title-price .price span:nth-child(1) {
+  color: red;
+  font-size: 24rpx;
+}
+.goods-content .goods-item .title-price .price span:nth-child(1) .price-mark {
+  font-size: 32rpx;
+}
+.goods-content .goods-item .title-price .price span:nth-child(2) {
+  color: #ccc;
+  font-size: 20rpx;
+}

@@ -1,0 +1,47 @@
+.goods-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .goods-item{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10rpx;
+        margin-bottom: 20rpx;
+        .picture{
+            width: 100%;
+            height: 320rpx;
+        }
+        .title-price{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20rpx 20rpx;
+            p{
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .price{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20rpx;
+                span:nth-child(1){
+                    color: red;
+                    font-size: 24rpx;
+                    .price-mark{
+                        font-size: 32rpx;
+                    }
+                }
+                span:nth-child(2){
+                    color: #ccc;
+                    font-size: 20rpx;
+                }
+            }
+        }
+    }
+}
