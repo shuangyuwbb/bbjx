@@ -43,5 +43,11 @@ Page({
   },
   onShow(){
     
+  },
+
+  toSearch(){
+    wx.navigateTo({
+      url: '/pages/search/search'
+    })
   }
 })

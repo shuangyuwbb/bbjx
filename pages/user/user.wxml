@@ -38,14 +38,14 @@
         <view class="wallet-title">
             <span>我的钱包</span>
         </view>
-        <item-tab></item-tab>
+         <item-tab tabs="{{tabs}}"></item-tab>
     </view>
 
     <view class="wallet">
         <view class="wallet-title">
             <span>我的工具</span>
         </view>
-        <item-tab></item-tab>
+          <item-tab tabs="{{tabs}}"></item-tab>
     </view>
 
     <view class="selection">

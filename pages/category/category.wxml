@@ -13,17 +13,23 @@
             wx:key="index" 
             data-id="{{item.id}}" 
             bindtap="handleSelection">
-                <span class="{{item.id === currentIndex ? 'active' : ''}}  ">{{item.title}}</span>
+                <span 
+                class="{{item.id === currentIndex ? 'active' : ''}}  "
+                >{{item.title}}</span>
             </view>
         </view>
         <scroll-view 
             class="catogory-right" 
             scroll-y
-            bindscroll="handleScroll"
-            scroll-into-view="{{toView}}"
-            show-scrollbar="true"
-            scroll-with-animation="true">
-            <view class="right-goods" wx:for="{{dataContent}}" wx:key="index" id="bbjx{{item.id}}">
+            show-scrollbar="false"
+            scroll-with-animation="true"
+            scroll-top="{{scrollTop}}"
+            >
+            <view 
+            class="right-goods" 
+            wx:for="{{rightContent.data}}" 
+            wx:key="index" 
+            >
                 <view class="goods-title">
                     <span>{{item.title}}</span>
                 </view>

@@ -1,1 +1,45 @@
-/* pages/cart/cart.wxss */
+.cart {
+  width: 100%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cart .authorization {
+  width: 100%;
+  height: 350rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+  margin-top: 5rpx;
+}
+.cart .authorization view {
+  width: 320rpx;
+  height: 220rpx;
+}
+.cart .authorization span:nth-child(2) {
+  line-height: 60rpx;
+  font-size: 26rpx;
+}
+.cart .authorization span:nth-child(3) {
+  width: 120rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  padding: 0 30rpx;
+  background-color: red;
+}
+.cart .goods-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart .goods-list .list-title {
+  margin-top: 50rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}

@@ -2,7 +2,7 @@
 <view class="index-contaner">
     <view class="header-search">
         <span>分类</span>
-        <view class="search-box">
+        <view class="search-box" bindtap = "toSearch">
             <span class="iconfont icon-soushuo"></span>
             <span>搜索朋友圈的好货</span>
         </view>

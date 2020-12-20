@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,13 +28,13 @@
       },
       {
         "pagePath": "pages/cart/cart",
-        "text": "首页",
+        "text": "购物车",
         "iconPath": "images/ucart.png",
         "selectedIconPath": "images/cart.png"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "首页",
+        "text": "个人主页",
         "iconPath": "images/umy.png",
         "selectedIconPath": "images/my.png"
       }
