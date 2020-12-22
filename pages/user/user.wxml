@@ -3,7 +3,7 @@
         <view id="avatar">
             <image src="../../images/1.png" id="avatar"></image>
         </view>
-        <label for="avatar">点击登录</label>
+        <label for="avatar" bind:tap="bindLogin">点击登录</label>
     </view>
     <view class="member">
         <view class="member-left-title">
@@ -24,7 +24,7 @@
             <span>我的订单</span>
             <span>全部订单></span>
         </view>
-        <item-tab tabs="{{tabs}}"></item-tab>
+        <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="authorization">
@@ -38,14 +38,14 @@
         <view class="wallet-title">
             <span>我的钱包</span>
         </view>
-         <item-tab tabs="{{tabs}}"></item-tab>
+         <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="wallet">
         <view class="wallet-title">
             <span>我的工具</span>
         </view>
-          <item-tab tabs="{{tabs}}"></item-tab>
+          <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="selection">

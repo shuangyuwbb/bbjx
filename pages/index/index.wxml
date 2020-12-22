@@ -8,7 +8,7 @@
         </view>
         <span>消息</span>
     </view>
-    <item-tab tabs="{{tabs}}"></item-tab>
+    <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
     <view class="index-content">
         <view class="index-group">
             <view class="group-title">

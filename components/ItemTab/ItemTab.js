@@ -9,8 +9,12 @@ Component({
     },
     type:{
       type: String,
-      default: 'nav' //nav:表示是图标和描述文字可以点击
-    }                 // text: 表示都是文字
+      value: 'nav' //nav:表示是图标和描述文字可以点击
+    },// text: 表示都是文字
+    flexParams:{
+      type: String,
+      value: ''
+    }              
   },
 
   /**
