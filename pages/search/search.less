@@ -1,11 +1,111 @@
-movable-area{
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    .movable-view{
-        width: 100rpx;
-        height: 100rpx;
-        background-color: red;
+.stay_top{
+    width: 750rpx;
+    line-height: 94rpx;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    .edit_row_title{
+        display: flex;
+        justify-content: space-around;
     }
+    .filtrate_content{
+        width: 100%;
+        position: absolute;
+        top: 94rpx;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        flex-wrap: wrap; 
+        padding: 0 20rpx 35rpx 20rpx;
+        border-bottom-left-radius: 25rpx;
+        border-bottom-right-radius: 25rpx;
+        .filtrate_item{
+            flex: 0 0 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            span{
+                margin: 10rpx 0;
+                padding: 0rpx 30rpx;
+                line-height: 40rpx;
+                border-radius: 20rpx;
+                background-color: #ccc;
+            }
+        }
+    }
+}
+.content{
+    margin-top: 94rpx; 
+    height: calc(100vh - 94rpx);
+    .moveable_row{ width: 100%; position: absolute;top: 0;left: 0; z-index: 100;}
+}
+.touchView{
+    width: 160rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.edit_row_holder{
+    width: 100%;
+    .dragSelected{  background-color: #ccc;}
+
+}
+.edit_row{ 
+    width: 100%; 
+    height: 50rpx;
+    overflow: hidden; 
+    font-size: 12px; 
+    height: 65px; 
+    box-sizing: border-box; 
+    padding: 5px 0; 
+    border-bottom: 1px #ddd solid;
+    display: flex;
+    .content_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .edit_col1{ 
+        width: 25%; 
+        height: 100%;
+        image{
+            width: 60rpx;
+            height: 60rpx;
+        }}
+    .edit_col2{ 
+        height: 100%;
+        width: 27%;
+    }
+    .edit_col3{ 
+        width: 24%; 
+        height: 100%;
+    }
+    .edit_col4{ 
+        width: 23%;
+        height: 100%; 
+        }
+}
+.none{
+    display: none !important;
+}
+.column{
+    flex-direction: column;
+    align-items: center;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: black;
+    opacity: 0.4;
+}
+.filtrateActive{
+    background-color: #aacce7 !important;
+    color: #1990ff;
 }

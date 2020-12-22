@@ -1,12 +1,16 @@
 <view class="stay_top">
-	<view class="edit_row edit_row_title">
-		<view class="edit_col1"><view class="edit_title_col1">删除</view></view>
-		<view class="edit_col2"><view class="placeholder"></view></view>
-		<view class="edit_col3">置顶</view>
-		<view class="edit_col4">排序</view>
+	<view class="edit_row_title">
+		<view bind:tap="bindFiltrate" data-index='0'><span>材质</span><span class="iconfont icon-sort-bottom"></span></view>
+		<view bind:tap="bindFiltrate" data-index='1'><span>厚度</span><span class="iconfont icon-sort-bottom"></span></view>
+		<view bind:tap="bindFiltrate" data-index='2'><span>气体</span><span class="iconfont icon-sort-bottom"></span></view>
+		<view bind:tap="bindFiltrate" data-index='3'><span>排序</span><span class="iconfont icon-sort-bottom"></span></view>
 	</view>
-</view>
-<view style="position: relative; z-index: 199;">
+	<view class="filtrate_content {{filtrateClass}}">
+		<view class="filtrate_item" wx:for="{{filtrate.data}}" wx:key="index"><span class="{{item.id === 0? 'filtrateActive': ''}}">{{item.value}}</span></view>
+	</view>
+</view> 
+
+<view class="content" style="position: relative; z-index: 199">
 	<view class="touchView" style="height:{{scrollPosition.scrollViewHeight}}px;"  catchtouchstart="draggleTouch"
 		  catchtouchmove="draggleTouch" catchtouchend="draggleTouch">
 	</view>
@@ -15,34 +19,25 @@
 		<movable-view style="height: {{scrollPosition.everyOptionCell}}px; width: 100%; background-color: #fff;"
 					  direction="vertical" x="{{movableViewPosition.x}}" y="{{movableViewPosition.y}}"
 					  inertia="false" damping="9999"  friction="9999">
-			<view class="edit_row ">
-				<view class="edit_col1" data-seccode="{{movableViewPosition.data.sDtSecCode}}" bindtap="selectOption"><view class="ico_delete"></view></view>
-				<view class="edit_col2"><view class="secname">{{movableViewPosition.data.sName}}</view><view class="seccode">{{movableViewPosition.data.sDtSecCode}}</view></view>
-				<view class="edit_col3" data-seccode="{{movableViewPosition.data.sDtSecCode}}"  bindtap="putOptionTop"><view class="ico_stay_top"></view></view>
-				<view class="edit_col4" data-seccode="{{movableViewPosition.data.sDtSecCode}}"><view class="ico_drag"></view></view>
+			<view class="edit_row">
+				<view class="content_item edit_col1"><image src="{{movableViewPosition.data.picture}}" /></view>
+				<view class="content_item edit_col2">{{movableViewPosition.data.thick}}</view>
+				<view class="content_item edit_col3">{{movableViewPosition.data.num}}</view>
+				<view class="content_item edit_col4" data-seccode="{{movableViewPosition.data.num}}"><span class="iconfont icon-paixu"></span></view>
 			</view>
 		</movable-view>
 	</movable-area>
-	<scroll-view class="edit_row_holder" scroll-y="{{scrollPosition.scrollY}}"
+	<scroll-view class="edit_row_holder"  scroll-y="true"
 				 style="height: {{scrollPosition.scrollViewHeight}}px;" bindscroll="bindscroll">
-		<block wx:for="{{optionsListData}}" wx:key="sDtSecCode">
+		<block wx:for="{{optionsListData}}" wx:key="num">
 			<view class="edit_row  {{item.selectClass}}">
-				<view class="edit_col1" data-seccode="{{item.sDtSecCode}}" bindtap="deleteOption"><view class="ico_delete"></view></view>
-				<view class="edit_col2"><view class="secname">{{item.sName}}</view><view class="seccode">{{item.sCode}}</view></view>
-				<view class="edit_col3" data-seccode="{{item.sDtSecCode}}"  bindtap="putOptionTop"><view class="ico_stay_top"></view></view>
-				<view class="edit_col4" data-seccode="{{item.sDtSecCode}}"><view class="ico_drag"></view></view>
+				<view class="content_item edit_col1"><image src="{{item.picture}}" /></view>
+				<view class="content_item edit_col2">{{item.thick}}</view>
+				<view class="content_item edit_col3">{{item.num}}</view>
+				<view class="content_item edit_col4" data-seccode="{{item.num}}"><span class="iconfont icon-paixu"></span></view>
 			</view>
 		</block>
 	</scroll-view>
 </view>
+<view class="{{mask}}" bindtap="bindCloseMask"></view>
 
-<!-- <view class="stay_bottom">
-	<view class="bottom_row">
-		<view bindtap="allSelect">
-		<view class="edit_col1 {{ifAllSelect}}"><view class="ico_checker"></view></view>
-		<view class="edit_col2">全选</view>
-		</view>
-		<view class="edit_del" bindtap="delOptions">删除({{deleteCellNumb}})</view>
-		<view class="edit_finish" bindtap="editFinish">完成</view>
-	</view>
-</view> -->
