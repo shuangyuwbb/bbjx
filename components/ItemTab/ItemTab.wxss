@@ -18,10 +18,13 @@
   margin-top: 20rpx;
 }
 .index-tabs .tabs-box .tab-item image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 80rpx;
+  height: 80rpx;
 }
 .index-tabs .tabs-box .tab-item span {
   margin-top: 20rpx;
   color: #525555;
+}
+.index-tabs .tabs-box .tab-item .text {
+  font-size: 20px;
 }

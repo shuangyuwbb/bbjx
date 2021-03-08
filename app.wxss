@@ -26,3 +26,6 @@ image{
   height: 100%;
   border-radius: 10rpx;
 }
+:root{
+  --theme-color: #FE5100
+}

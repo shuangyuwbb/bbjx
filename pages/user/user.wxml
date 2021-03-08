@@ -8,7 +8,7 @@
     <view class="member">
         <view class="member-left-title">
             <view class="left-title">
-                <span>精选会员</span>
+                <span> <i class="iconfont icon-huiyuan1-01"></i> 精选会员</span>
                 <span>优选好货低至7折，任你选</span>
             </view>
         </view>
@@ -24,7 +24,7 @@
             <span>我的订单</span>
             <span>全部订单></span>
         </view>
-        <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
+        <item-tab tabs="{{tabsOrder}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="authorization">
@@ -38,14 +38,14 @@
         <view class="wallet-title">
             <span>我的钱包</span>
         </view>
-         <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
+         <item-tab type="text" tabs="{{tabs}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="wallet">
         <view class="wallet-title">
             <span>我的工具</span>
         </view>
-          <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
+          <item-tab tabs="{{tabsTool}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="selection">

@@ -48,12 +48,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -83,6 +77,12 @@
           "id": -1,
           "name": "搜索页面",
           "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人主页",
+          "pathName": "pages/user/user",
           "scene": null
         }
       ]

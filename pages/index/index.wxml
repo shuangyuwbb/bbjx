@@ -1,12 +1,12 @@
 <!-- index.wxml -->
 <view class="index-contaner">
     <view class="header-search">
-        <span>分类</span>
+        <span class="category-icon"><i class="iconfont icon-2"></i></span>
         <view class="search-box" bindtap = "toSearch">
             <span class="iconfont icon-soushuo"></span>
             <span>搜索朋友圈的好货</span>
         </view>
-        <span>消息</span>
+        <span class="category-icon"><i class="iconfont icon-xiaoxi1"></i></span>
     </view>
     <item-tab tabs="{{tabs}}" flexParams="space-around"></item-tab>
     <view class="index-content">

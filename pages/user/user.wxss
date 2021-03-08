@@ -9,8 +9,8 @@
   align-items: center;
 }
 .user .header #avatar {
-  width: 160rpx;
-  height: 160rpx;
+  width: 120rpx;
+  height: 120rpx;
   border-radius: 50%;
 }
 .user .header label {
