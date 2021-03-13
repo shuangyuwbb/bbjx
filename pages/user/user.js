@@ -1,4 +1,5 @@
 import {login} from '../../utils/asyncwx.js'
+import {http} from '../../request/index'
 Page({
 
   /**
@@ -29,6 +30,19 @@ Page({
   bindLogin(){
     login().then(res=>{
       console.log(res);
+      let params = {
+        url: '/api/user/token',
+        method: 'POST',
+        data: {
+          code: res.code,
+        }
+      }
+      http(params).then(res=>{
+        console.log(res.token)
+        if(res.status === 0){
+          wx.setStorageSync('token',res.token)
+        }
+      })
     })
   }
 })

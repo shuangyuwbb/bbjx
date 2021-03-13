@@ -1,1 +1,38 @@
-/* pages/goodsDetail/goodsDetail.wxss */
+.detail {
+  width: 100vw;
+}
+.detail .bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: #ccc 2px 0 2px;
+}
+.detail .bottom span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .bottom .btn {
+  display: flex;
+}
+.detail .bottom .btn span:nth-child(1) {
+  height: 30px;
+  width: 80px;
+  color: white;
+  background: #ffcc66;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.detail .bottom .btn span:nth-child(2) {
+  height: 30px;
+  width: 80px;
+  color: white;
+  background: #ff0033;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

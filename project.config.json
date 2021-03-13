@@ -38,7 +38,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "wx68af64f2f6065621",
+  "appid": "wx34ae96899f9d36e4",
   "projectname": "bbjx",
   "debugOptions": {
     "hidedInDevtools": []
@@ -83,6 +83,18 @@
         {
           "name": "个人主页",
           "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品详情",
+          "pathName": "pages/goodsDetail/goodsDetail",
           "scene": null
         }
       ]

@@ -18,7 +18,7 @@
                 </view>
                 <span>更多></span>
             </view>
-            <goods-item data="{{hotGoods}}"></goods-item>
+            <goods-item data="{{hotGoods}}" bind:tap="toGoodsDetail"></goods-item>
         </view>
         <view class="index-choose">
             <view class="choose-title">

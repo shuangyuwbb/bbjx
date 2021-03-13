@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="ads-box">
+        广告位
+    </view>
+    <view class="list">
+        <list wx:for="{{goods}}" data="{{item}}" wx:key="index"></list>
+    </view>
+</view>

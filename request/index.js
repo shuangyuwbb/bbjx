@@ -1,18 +1,21 @@
 let ajaxTimes = 0
-
-export const request = (params) =>{
+const baseUrl = 'http://localhost:3000'
+export const http = (params) =>{
     ajaxTimes ++
     wx.showLoading({
         title: '加载中',
         mask: true
     })
-    const baseUrl = 'http://localhost:3000'
+    let header = {
+        token: wx.getStorageSync('token')
+    }
     return new Promise((resolve, reject)=>{
         wx.request({
+            header,
             ...params,
             url: baseUrl + params.url,
             success: res =>{
-                resolve(res)
+                resolve(res.data)
             },
             fail: err =>{
                 reject(err)

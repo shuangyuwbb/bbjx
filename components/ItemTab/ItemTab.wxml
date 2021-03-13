@@ -1,4 +1,4 @@
-<view class="index-tabs">
+<view class="index-tabs" bind:tap="toGoodsList">
     <view class="tabs-box" style="justify-content: {{flexParams}}">
         <view class="tab-item" wx:for="{{tabs}}" wx:key="index">
             <span class="text" wx:if="{{type === 'text'}}">{{item.value}}</span>
