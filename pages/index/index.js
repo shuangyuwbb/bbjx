@@ -53,7 +53,15 @@ Page({
 
   toGoodsDetail(){
     wx.navigateTo({
-      url: '/pages/goodsDetail/goodsDetail',
+      url: '/pages/detail/detail',
     })
-  }
+  },
+
+  onShareAppMessage: function () {
+    return {
+      title: 'bbjx',
+      desc: '精选商城',
+      path: '/pages/index/index'
+    }
+  },
 })

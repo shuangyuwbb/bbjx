@@ -1,6 +1,6 @@
 <view class="container">
     <view class="ads-box">
-        广告位
+        <image src="https://yanxuan.nosdn.127.net/14939888168151095.png"></image>
     </view>
     <view class="list">
         <list wx:for="{{goods}}" data="{{item}}" wx:key="index"></list>

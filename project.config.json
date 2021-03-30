@@ -94,7 +94,8 @@
         },
         {
           "name": "商品详情",
-          "pathName": "pages/goodsDetail/goodsDetail",
+          "pathName": "pages/detail/detail",
+          "query": "",
           "scene": null
         }
       ]
