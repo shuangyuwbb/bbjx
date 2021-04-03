@@ -6,7 +6,13 @@
 }
 .container .ads-box {
   width: 100%;
-  height: 200px;
+  height: 140px;
+  text-align: center;
+  padding: 10px 0;
+}
+.container .ads-box image {
+  width: 98%;
+  height: 120px;
 }
 .container .list {
   width: 94%;
