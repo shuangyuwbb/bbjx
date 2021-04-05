@@ -1,4 +1,5 @@
 // pages/category/category.js
+import {http} from './../../request/index'
 Page({
 
   data: {
@@ -233,6 +234,7 @@ Page({
         ]
       },
     ],
+    leftNav: [],
     type: 'nav',
 
     rightContent: [],
@@ -241,10 +243,41 @@ Page({
     scrollTop: 0,
     toView: ''
   },
+
+  onShow(){
+    this.loadCategoryV1()
+  },
   onLoad(){
     this.setData({rightContent: this.data.dataContent[0]})
   },
 
+  loadCategoryV1(){
+    let params = {
+      url: 'goods/category/v1'
+    }
+    http(params).then(res=>{
+      this.setData({
+        leftNav: res.data,
+        currentIndex: res.data[0].id
+      })
+      this.loadCategoryV2()
+    })
+  },
+
+  loadCategoryV2(){
+    let params = {
+      url: 'goods/category/v2',
+      data: {
+        id: this.data.currentIndex
+      }
+    }
+    http(params).then(res=>{
+      console.log(res)
+      // this.setData({
+      //   leftNav: res.data
+      // })
+    })
+  },
   handleSelection(e){
     let toView = 'bbjx'
     let id = e.currentTarget.dataset.id
@@ -259,5 +292,13 @@ Page({
     this.setData({ toView })
   },
 
+  loadGoodsList(){
+    let params = {
+      url: ''
+    }
+    http(params).then(res=>{
+      
+    })
+  }
   
 })

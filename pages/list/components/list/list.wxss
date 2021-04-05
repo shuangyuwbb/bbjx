@@ -9,7 +9,7 @@
   margin-bottom: 20rpx;
 }
 .choose-content .choose-picture {
-  width: 460rpx;
+  width: 230rpx;
   height: 230rpx;
 }
 .choose-content .choose-info {

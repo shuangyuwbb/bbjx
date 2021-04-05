@@ -1,5 +1,5 @@
 let ajaxTimes = 0
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'http://localhost:3000/api/'
 export const http = (params) =>{
     ajaxTimes ++
     wx.showLoading({

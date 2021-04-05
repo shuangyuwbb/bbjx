@@ -2,8 +2,8 @@
     <view class="tabs-box" style="justify-content: {{flexParams}}">
         <view class="tab-item" wx:for="{{tabs}}" wx:key="index">
             <span class="text" wx:if="{{type === 'text'}}">{{item.value}}</span>
-            <image wx:if="{{item.url}}" src="{{item.url}}" alt="" />
-            <span>{{item.text}}</span> 
+            <image wx:if="{{item.img}}" src="{{item.img}}" alt="" />
+            <span>{{item.text || item.name}}</span> 
         </view>
     </view>
 </view>

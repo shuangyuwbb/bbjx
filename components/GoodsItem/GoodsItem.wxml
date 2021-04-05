@@ -1,10 +1,10 @@
 <view class="group-content">
     <view class="group-item" wx:for="{{data}}" wx:key="index">
-        <image src="{{item.url}}" />
-        <span class="item-title">{{item.text}}</span>
+        <image src="{{item.main_image}}" />
+        <span class="item-title">{{item.name}}</span>
         <view class="item-price">
+            <span>￥ {{item.discount_price}}</span>
             <span>￥ {{item.price}}</span>
-            <span>￥ {{item.old_price}}</span>
         </view>
     </view>
 </view>

@@ -52,6 +52,6 @@
         <view class="selection-title">
             <span>直播爆款精选</span>            
         </view>
-        <goods-list></goods-list>
+        <goods-list list="{{list}}"></goods-list>
     </view>
 </view>

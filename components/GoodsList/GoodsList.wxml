@@ -1,29 +1,15 @@
-  <view class="goods-content">
-            <view class="goods-item">
-                <view class="picture">
-                    <image src="../../images/2.png" />
-                </view>
-                <view class="title-price">
-                    <p>怡恩贝婴儿樱花湿巾手口专用新生宝宝湿巾纸</p>
+<view class="goods-content">
+    <view class="goods-item" wx:for="{{list}}" wx:key="index">
+        <view class="picture">
+            <image src="{{item.main_image}}" />
+        </view>
+        <view class="title-price">
+            <p>{{item.subtitle}}</p>
                 
-                    <view class="price">
-                        <span>补贴价<span class="price-mark">17.89</span></span>
-                        <span>已补1.28</span>
-                    </view>
-                </view>
-            </view>
-
-            <view class="goods-item">
-                <view class="picture">
-                    <image src="../../images/2.png" />
-                </view>
-                <view class="title-price">
-                    <p>怡恩贝婴儿樱花湿巾手口专用新生宝宝湿巾纸</p>
-                
-                    <view class="price">
-                        <span>补贴价<span class="price-mark">17.89</span></span>
-                        <span>已补1.28</span>
-                    </view>
-                </view>
+            <view class="price">
+                <span>补贴价<span class="price-mark">{{item.price}}</span></span>
+                <span>已补{{item.price - item.discount_price}}</span>
             </view>
         </view>
+    </view>
+</view>

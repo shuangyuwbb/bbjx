@@ -9,13 +9,13 @@
     <view class="category-content">
         <view class="catogory-left">
             <view class="left-button" 
-            wx:for="{{dataContent}}" 
+            wx:for="{{leftNav}}" 
             wx:key="index" 
             data-id="{{item.id}}" 
             bindtap="handleSelection">
                 <span 
                 class="{{item.id === currentIndex ? 'active' : ''}}  "
-                >{{item.title}}</span>
+                >{{item.name}}</span>
             </view>
         </view>
         <scroll-view 

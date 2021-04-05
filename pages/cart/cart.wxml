@@ -8,6 +8,6 @@
         <view class="list-title">
             <span>猜你喜欢</span>            
         </view>
-        <goods-list></goods-list>
+        <goods-list list="{{list}}"></goods-list>
     </view>
 </view>

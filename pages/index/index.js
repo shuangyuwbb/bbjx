@@ -1,3 +1,6 @@
+// const { http } = require("../../request/index")
+
+import {http} from './../../request/index'
 Page({
   data:{
     tabs: [
@@ -42,9 +45,44 @@ Page({
     ]
   },
   onShow(){
-    
+    this.loadCategory()
+    this.loadHotGoods()
+    this.loadGoodsList()
   },
 
+  loadCategory(){
+    let params = {
+      url: 'goods/index/category'
+    }
+    http(params).then(res=>{
+      this.setData({
+        tabs: res.data
+      })
+    })
+  },
+
+  loadHotGoods(){
+    let params = {
+      url: 'goods/index/hotGoods'
+    }
+    http(params).then(res=>{
+      console.log(res);
+      this.setData({
+        hotGoods: res.data
+      })
+    })
+  },
+
+  loadGoodsList(){
+    let params = {
+      url: 'goods/index/shopList'
+    }
+    http(params).then(res=>{
+      this.setData({
+        goods: res.data
+      })
+    })
+  },
   toSearch(){
     wx.navigateTo({
       url: '/pages/search/search'

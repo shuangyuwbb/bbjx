@@ -1,16 +1,16 @@
 <view class="choose-content">
     <view class="choose-picture">
-        <image src="{{data.url}}" />
+        <image src="{{data.main_image}}" />
     </view>
     <view class="choose-info">
         <view class="top">
-            <p>{{data.text}}</p>
+            <p>{{data.subtitle}}</p>
         </view>
         <view class="tip">直降</view>
         <view class="bottom">
             <view class="bottom-price">
                 <span>￥{{data.price}}</span>
-                <span>{{data.price}}</span>
+                <span>{{data.discount_price}}</span>
             </view>
             <view class="btn">立即购买</view>
         </view>
