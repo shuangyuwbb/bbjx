@@ -32,6 +32,10 @@ Component({
       wx.navigateTo({
         url: '/pages/list/list',
       })
+    },
+    onTap(e){
+      let id = e.currentTarget.dataset.id
+      this.triggerEvent('myEvent', id)
     }
   }
 })

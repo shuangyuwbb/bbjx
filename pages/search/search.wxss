@@ -7,8 +7,10 @@
   height: 45px;
 }
 .search > input {
+  text-align: center;
   padding-bottom: 5px;
   width: 100%;
+  line-height: 45px;
   background: #ccc;
   border: 1px solid #ccc;
   border-radius: 20px;

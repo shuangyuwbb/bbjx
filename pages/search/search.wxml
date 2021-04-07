@@ -1,6 +1,6 @@
 <view class="search-page">
   <view class="search">
-    <input type="text" confirm-type="search" placeholder="请输入商品名称"></input>
+    <input type="text" confirm-type="search" placeholder="请输入商品名称" bindconfirm="bindInput"></input>
   </view>
 
 </view>

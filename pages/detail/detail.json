@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-block": "../../components/Block/Block"
+  }
 }

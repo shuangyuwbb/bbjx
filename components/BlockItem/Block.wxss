@@ -1,0 +1,26 @@
+.block {
+  position: relative;
+  width: 100vw;
+  height: 40px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.block .tip-left {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+.block .tip-left .tip {
+  color: #cdcdcd;
+}
+.block .tip-left image {
+  width: 25px;
+  height: 25px;
+  color: black;
+}

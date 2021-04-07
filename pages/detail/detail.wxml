@@ -2,7 +2,7 @@
     <!-- 轮播 -->
     <view class="swiper">
         <swiper >
-            <swiper-item wx:for="{{swipter}}"><image src="{{item.url}}"  wx:key="index"></image></swiper-item>
+            <swiper-item wx:for="{{swipter}}"  wx:key="index"><image src="{{item.url}}" ></image></swiper-item>
         </swiper>
     </view>
     <view class="price"><text class="">￥39.00</text></view>
@@ -10,23 +10,23 @@
        <text>复古T恤好看精装出品</text>
     </view>
     <view class="reminder">
-       <text>保障</text><text>保障</text>
+       <my-block title="运费" value="免运费" show-left="true"></my-block>
     </view>
     <view class="reminder">
-       <text>发货</text>
+       <my-block title="选择" value="规格" show-left="true"></my-block>
     </view>
     <view class="reminder">
-       <text>选择</text>
+        <my-block title="服务" value="收货后结算" show-left="true"></my-block>
     </view>
     <view class="reminder">
-       <text>参数</text>
+      <my-block title="评价" value="全部评价" show-left="true"></my-block>
     </view>
     <view class="bottom">
         <span>客服</span>
         <span>收藏</span>
         <view class="btn">
             <span>加入购物</span>
-            <span>立即购买</span>
+            <span bind:tap="toBuy">立即购买</span>
         </view>
     </view>
 </view>

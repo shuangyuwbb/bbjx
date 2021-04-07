@@ -8,7 +8,9 @@
     "pages/detail/detail",
     "pages/order/order",
     "pages/vip/vip",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/buy/buy",
+    "pages/block/block"
   ],
   "window": {
     "backgroundTextStyle": "light",

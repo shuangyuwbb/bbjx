@@ -1,0 +1,88 @@
+.add-adress {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: #fff;
+}
+.add-adress image {
+  width: 40px;
+  height: 40px;
+}
+.add-adress text {
+  color: #857f7f;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.adress {
+  width: 100vw;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  background: #fff;
+}
+.goods {
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.goods .trade-name {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+}
+.goods .trade-name image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.goods .info-box {
+  display: flex;
+}
+.goods .info-box image {
+  width: 80px;
+  height: 80px;
+}
+.goods .info-box .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f2f3f5;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.goods .info-box .info .guige {
+  display: flex;
+  justify-content: space-between;
+}
+.goods .info-box .info .price {
+  position: absolute;
+  bottom: 0;
+}
+.btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.btn text {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn .submit {
+  background: red;
+}

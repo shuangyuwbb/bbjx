@@ -1,0 +1,33 @@
+<view wx:if="{{false}}" class="add-adress">
+    <image src="./image/add.png" />
+    <text class="address-text">新增收货地址</text>
+</view>
+<view wx:else class="adress">
+    <text>收货地址：</text>
+    <text class="address-text">甘肃省天水市甘谷县大象善政</text>
+</view>
+<view class="goods">
+    <view class="trade-name">
+        <image src="./image/trade.png"></image>
+        <text>阳江刀具品牌店</text>
+    </view>
+    <view class="info-box">
+        <image class="k" src="https://gss3.bdstatic.com/84oSdTum2Q5BphGlnYG/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=63cee51646c887636c306a018e6e700d&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F6f061d950a7b02080beaa9ef6dd9f2d3572cc899.jpg"></image>
+        <view class="info">
+            <view class="title">开发哈师大就发士大夫艰苦了肯定是咖啡机</view>
+            <view class="guige">
+                <text class="f">强力三件套</text>
+                <text class="f">X 1</text>
+            </view>
+            <view class="price">￥ 9.9</view>
+        </view>
+    </view>
+    <my-block title="服务" show-left="true" tip="使用优惠"></my-block>
+    <my-block title="配送方式" show-left="true" tip="快递" color="#000"></my-block>
+    <my-block title="服务" value="收货后结算"></my-block>
+    <my-block title="合计" tip="9.90"></my-block>
+</view>
+<view class="btn">
+    <text>合计: ￥9.90</text>
+    <text class="submit">提交订单</text>
+</view>

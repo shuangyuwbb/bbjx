@@ -1,0 +1,8 @@
+<view class="block">
+    <text>{{title}}</text>
+    <text>{{value}}</text>
+    <view class="tip-left">
+        <text class="tip" style="color:{{color}}">{{tip}}</text>
+        <image wx:if="{{showLeft}}"  src="./image/left.png" alt="" />
+    </view>
+</view>

@@ -27,13 +27,13 @@
             >
             <view 
             class="right-goods" 
-            wx:for="{{rightContent.data}}" 
+            wx:for="{{rightContent}}" 
             wx:key="index" 
             >
                 <view class="goods-title">
                     <span>{{item.title}}</span>
                 </view>
-                <item-tab tabs="{{item.tabs}}"></item-tab>
+                <item-tab tabs="{{item.list}}" bind:myEvent="toGoodsDetail"></item-tab>
             </view>
         </scroll-view>
     </view>

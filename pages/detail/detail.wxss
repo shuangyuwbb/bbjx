@@ -1,5 +1,6 @@
 .detail {
   width: 100vw;
+  background: #ededed;
 }
 .detail .price {
   width: 100vw;
@@ -25,15 +26,10 @@
 .detail .reminder {
   width: 100vw;
   line-height: 50px;
-  padding: 0 10px;
 }
 .detail .reminder text:nth-child(1) {
   font-size: 12px;
   color: #ccc;
-  margin-right: 20px;
-}
-.detail .reminder text:nth-child(2) {
-  font-size: 16px;
 }
 .detail .bottom {
   position: fixed;
