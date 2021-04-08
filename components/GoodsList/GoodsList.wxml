@@ -1,14 +1,14 @@
 <view class="goods-content">
-    <view class="goods-item" wx:for="{{list}}" wx:key="index">
+    <view class="goods-item" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}" bind:tap="onTap">
         <view class="picture">
             <image src="{{item.main_image}}" />
         </view>
         <view class="title-price">
             <p>{{item.subtitle}}</p>
-                
+
             <view class="price">
-                <span>补贴价<span class="price-mark">{{item.price}}</span></span>
-                <span>已补{{item.price - item.discount_price}}</span>
+                <text>补贴价<text class="price-mark">{{item.price}}</text></text>
+                <text>已补{{item.price - item.discount_price}}</text>
             </view>
         </view>
     </view>

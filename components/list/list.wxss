@@ -29,7 +29,7 @@
 .choose-content .choose-info p:nth-child(2) {
   line-height: 50rpx;
 }
-.choose-content .choose-info p:nth-child(2) span {
+.choose-content .choose-info p:nth-child(2) text {
   border: 1rpx #bd4747 solid;
   border-radius: 20rpx;
   padding: 5rpx 15rpx;
@@ -37,7 +37,7 @@
   color: #c94545;
   margin: 30rpx 0 0 10rpx;
 }
-.choose-content .choose-info p:nth-child(2) span:nth-child(1) {
+.choose-content .choose-info p:nth-child(2) text:nth-child(1) {
   margin-left: 15rpx;
 }
 .choose-content .choose-info .top {
@@ -59,12 +59,12 @@
   display: flex;
   align-items: center;
 }
-.choose-content .choose-info .bottom .bottom-price span:nth-child(1) {
+.choose-content .choose-info .bottom .bottom-price text:nth-child(1) {
   color: red;
   font-size: 38rpx;
   font-weight: 500;
 }
-.choose-content .choose-info .bottom .bottom-price span:nth-child(2) {
+.choose-content .choose-info .bottom .bottom-price text:nth-child(2) {
   line-height: 20rpx;
   font-size: 22rpx;
   color: #d1d1d1;

@@ -36,7 +36,7 @@ Page({
     login().then(res=>{
       console.log(res);
       let params = {
-        url: '/api/user/token',
+        url: 'user/token',
         method: 'POST',
         data: {
           code: res.code,
@@ -61,6 +61,12 @@ Page({
         list: res.data
       })
     })
-  }
-  
+  },
+
+  toGoodsDetail(e){
+    wx.navigateTo({
+      url: '/pages/detail/detail?id='+e.detail,
+    })
+  },
+
 })

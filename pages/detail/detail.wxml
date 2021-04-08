@@ -5,9 +5,9 @@
             <swiper-item wx:for="{{swipter}}"  wx:key="index"><image src="{{item.url}}" ></image></swiper-item>
         </swiper>
     </view>
-    <view class="price"><text class="">￥39.00</text></view>
+    <view class="price"><text class="">￥{{detail.price}}</text></view>
     <view class="title">
-       <text>复古T恤好看精装出品</text>
+       <text>{{detail.name}}</text>
     </view>
     <view class="reminder">
        <my-block title="运费" value="免运费" show-left="true"></my-block>
@@ -22,11 +22,11 @@
       <my-block title="评价" value="全部评价" show-left="true"></my-block>
     </view>
     <view class="bottom">
-        <span>客服</span>
-        <span>收藏</span>
+        <text>客服</text>
+        <text>收藏</text>
         <view class="btn">
-            <span>加入购物</span>
-            <span bind:tap="toBuy">立即购买</span>
+            <text>加入购物</text>
+            <text bind:tap="toBuy">立即购买</text>
         </view>
     </view>
 </view>

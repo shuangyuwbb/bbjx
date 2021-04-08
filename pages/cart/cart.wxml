@@ -1,13 +1,32 @@
-<view class="cart">
+<view class="cart" wx:if="{{false}}">
     <view class="authorization">
-        <view><image src="../../images/cart.jpg" /></view>
-        <span>需要登录才能使用购物车哦！</span>
-        <span>去登录</span>
+        <view>
+            <image src="../../images/cart.jpg"/>
+        </view>
+        <text>需要登录才能使用购物车哦！</text>
+        <text>去登录</text>
     </view>
     <view class="goods-list">
         <view class="list-title">
-            <span>猜你喜欢</span>            
+            <text>猜你喜欢</text>
         </view>
-        <goods-list list="{{list}}"></goods-list>
+        <goods-list list="{{list}}" bind:myEvent="toGoodsDetail"></goods-list>
+    </view>
+</view>
+<view wx:else>
+    <cart></cart>
+    <cart></cart>
+    <cart></cart>
+    <cart></cart>
+
+    <view class="bottom-btn">
+        <view class="check">
+            <checkbox></checkbox>
+            <text>全选</text>
+        </view>
+        <view class="count">
+            <text>合计：￥0</text>
+            <view class="sumit">结算</view>
+        </view>
     </view>
 </view>

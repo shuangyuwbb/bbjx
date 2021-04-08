@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "goods-list": "../../components/GoodsList/GoodsList"
+    "goods-list": "../../components/GoodsList/GoodsList",
+    "cart": "../../components/Cart/Cart"
   }
 }

@@ -1,0 +1,14 @@
+<view class="cart">
+    <view class="cart-title">
+        <checkbox></checkbox>
+        <text>悦动运动专营点</text>
+    </view>
+    <view class="cart-info">
+        <image src="https://ftp.bmp.ovh/imgs/2021/04/80bae57111fddd22.png"></image>
+        <view class="cart-info-title">
+            <text>轮滑写趁人六哦比你感谢</text>
+            <text class="price">￥189</text>
+            <view class="cart-count"><text class="sub">-</text>2<text class="add">+</text></view>
+        </view>
+    </view>
+</view>

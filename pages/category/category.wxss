@@ -17,11 +17,11 @@
   border-radius: 30rpx;
   background-color: #ffffff;
 }
-.category .header-search .search-box span:nth-child(1) {
+.category .header-search .search-box text:nth-child(1) {
   color: #cccccc;
   margin: 0 5px;
 }
-.category .header-search .search-box span:nth-child(2) {
+.category .header-search .search-box text:nth-child(2) {
   color: #cccccc;
 }
 .category .category-content {
@@ -44,7 +44,7 @@
   line-height: 80rpx;
   text-align: center;
 }
-.category .category-content .catogory-left .left-button span {
+.category .category-content .catogory-left .left-button text {
   color: #666666;
 }
 .category .category-content .catogory-left .left-button .active {
@@ -70,7 +70,7 @@
   width: 100%;
   padding: 20rpx 0 0 20rpx;
 }
-.category .category-content .catogory-right .right-goods .goods-title span {
+.category .category-content .catogory-right .right-goods .goods-title text {
   font-size: 34rpx;
   font-weight: 600;
   color: #1b1b1b;

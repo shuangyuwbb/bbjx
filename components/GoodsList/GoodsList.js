@@ -20,6 +20,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onTap(e){
+      let id = e.currentTarget.dataset.id
+      this.triggerEvent('myEvent', id)
+    }
   }
 })

@@ -8,50 +8,50 @@
     <view class="member">
         <view class="member-left-title">
             <view class="left-title">
-                <span> <i class="iconfont icon-huiyuan1-01"></i> 精选会员</span>
-                <span>优选好货低至7折，任你选</span>
+                <text> <i class="iconfont icon-huiyuan1-01"></i> 精选会员</text>
+                <text>优选好货低至7折，任你选</text>
             </view>
         </view>
         <view class="member-right-button">
             <view class="right-button">
-                <span>开通享特权></span>
+                <text>开通享特权></text>
             </view>
         </view>
     </view>
 
     <view class="order">
         <view class="order-title">
-            <span>我的订单</span>
-            <span>全部订单></span>
+            <text>我的订单</text>
+            <text>全部订单></text>
         </view>
         <item-tab tabs="{{tabsOrder}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="authorization">
-        <span>找不到订单和优惠卷？绑定手机号试试</span>
+        <text>找不到订单和优惠卷？绑定手机号试试</text>
         <view class="auth-btn">
-            <span>立即绑定</span>
+            <text>立即绑定</text>
         </view>
     </view>
 
     <view class="wallet">
         <view class="wallet-title">
-            <span>我的钱包</span>
+            <text>我的钱包</text>
         </view>
          <item-tab type="text" tabs="{{tabs}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="wallet">
         <view class="wallet-title">
-            <span>我的工具</span>
+            <text>我的工具</text>
         </view>
           <item-tab tabs="{{tabsTool}}" flexParams="space-around"></item-tab>
     </view>
 
     <view class="selection">
         <view class="selection-title">
-            <span>直播爆款精选</span>            
+            <text>直播爆款精选</text>
         </view>
-        <goods-list list="{{list}}"></goods-list>
+        <goods-list list="{{list}}" bind:myEvent="toGoodsDetail"></goods-list>
     </view>
 </view>

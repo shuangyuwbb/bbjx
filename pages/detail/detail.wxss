@@ -42,7 +42,7 @@
   align-items: center;
   box-shadow: #ccc 2px 0 2px;
 }
-.detail .bottom span {
+.detail .bottom text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
 .detail .bottom .btn {
   display: flex;
 }
-.detail .bottom .btn span:nth-child(1) {
+.detail .bottom .btn text:nth-child(1) {
   height: 30px;
   width: 80px;
   color: white;
@@ -58,7 +58,7 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.detail .bottom .btn span:nth-child(2) {
+.detail .bottom .btn text:nth-child(2) {
   height: 30px;
   width: 80px;
   color: white;

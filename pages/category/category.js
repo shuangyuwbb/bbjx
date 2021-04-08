@@ -1,7 +1,5 @@
-// pages/category/category.js
 import {http} from './../../request/index'
 Page({
-
   data: {
     leftNav: [],
     type: 'nav',
@@ -43,7 +41,7 @@ Page({
         rightContent: res.data
       })
     })
-    
+
   },
   handleSelection(e){
     this.setData({
@@ -57,7 +55,7 @@ Page({
       url: ''
     }
     http(params).then(res=>{
-      
+
     })
   },
 
@@ -66,7 +64,7 @@ Page({
     wx.navigateTo({
       url: '/pages/detail/detail?id='+e.detail,
     })
-    
+
   }
-  
+
 })

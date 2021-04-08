@@ -34,14 +34,14 @@
   flex-direction: column;
   margin-top: 20rpx;
 }
-.goods-content .goods-item .title-price .price span:nth-child(1) {
+.goods-content .goods-item .title-price .price text:nth-child(1) {
   color: red;
   font-size: 24rpx;
 }
-.goods-content .goods-item .title-price .price span:nth-child(1) .price-mark {
+.goods-content .goods-item .title-price .price text:nth-child(1) .price-mark {
   font-size: 32rpx;
 }
-.goods-content .goods-item .title-price .price span:nth-child(2) {
+.goods-content .goods-item .title-price .price text:nth-child(2) {
   color: #ccc;
   font-size: 20rpx;
 }

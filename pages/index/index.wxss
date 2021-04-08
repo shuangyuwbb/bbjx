@@ -21,11 +21,11 @@
   border-radius: 30rpx;
   background-color: #ffffff;
 }
-.index-contaner .header-search .search-box span:nth-child(1) {
+.index-contaner .header-search .search-box text:nth-child(1) {
   color: #cccccc;
   margin: 0 5px;
 }
-.index-contaner .header-search .search-box span:nth-child(2) {
+.index-contaner .header-search .search-box text:nth-child(2) {
   color: #cccccc;
 }
 .index-contaner .index-content {
@@ -47,15 +47,15 @@
   display: flex;
   justify-content: space-between;
 }
-.index-contaner .index-content .index-group .group-title .title-tip span:nth-child(1) {
+.index-contaner .index-content .index-group .group-title .title-tip text:nth-child(1) {
   color: #1b1818;
   font-size: 28rpx;
   font-weight: 400;
 }
-.index-contaner .index-content .index-group .group-title .title-tip span:nth-child(2) {
+.index-contaner .index-content .index-group .group-title .title-tip text:nth-child(2) {
   color: #e59a69;
 }
-.index-contaner .index-content .index-group .group-title span {
+.index-contaner .index-content .index-group .group-title text {
   font-size: 24rpx;
   color: #ccc;
 }
@@ -65,12 +65,12 @@
 .index-contaner .index-content .index-choose .choose-title {
   line-height: 70rpx;
 }
-.index-contaner .index-content .index-choose .choose-title span:nth-child(1) {
+.index-contaner .index-content .index-choose .choose-title text:nth-child(1) {
   color: #1b1818;
   font-size: 28rpx;
   font-weight: 400;
 }
-.index-contaner .index-content .index-choose .choose-title span:nth-child(2) {
+.index-contaner .index-content .index-choose .choose-title text:nth-child(2) {
   color: #aaacab;
   font-size: 24rpx;
   margin-left: 40rpx;

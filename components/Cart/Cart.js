@@ -1,12 +1,10 @@
-// components/GoodsItem/GoodsItem.js
+// components/Cart/Cart.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    data: {
-      type: Array
-    }
+
   },
 
   /**
@@ -20,9 +18,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onTap(e){
-      let id = e.currentTarget.dataset.id
-      this.triggerEvent('myEvent', id)
-    }
+
   }
 })

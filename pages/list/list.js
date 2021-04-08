@@ -5,50 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods:[
-      {
-        id: 0, 
-        url: '../../images/2.png',
-        text: 'LG锐眼润膏洗发水 头皮专户人参韧养 250ml/支 百草植物 毫无鼻腔',
-        hot: '100%好评',
-        label: '人参韧养',
-        price: 29.9,
-        tip: '立减'
-      },
-      {
-        id: 0, 
-        url: '../../images/2.png',
-        text: 'LG锐眼润膏洗发水 头皮专户人参韧养 250ml/支 百草植物 毫无鼻腔',
-        hot: '100%好评',
-        label: '人参韧养',
-        price: 29.9,
-        tip: '立减'
-      },
-      {
-        id: 0, 
-        url: '../../images/2.png',
-        text: 'LG锐眼润膏洗发水 头皮专户人参韧养 250ml/支 百草植物 毫无鼻腔',
-        hot: '100%好评',
-        label: '人参韧养',
-        price: 29.9,
-        tip: '立减'
-      }
-    ],
+    goods:[],
     list: []
   },
-  
+
+  onLoad(option){
+    this.setData({
+      id: option.id
+    })
+  },
+
   onShow(){
     this.loadGoodsList()
   },
 
   loadGoodsList(){
     let params = {
-      url: 'goods/list'
+      url: 'goods/list',
+      data: {
+        id: this.data.id
+      }
     }
     http(params).then(res=>{
       this.setData({
         list: res.data
       })
+    })
+  },
+
+  toGoodsDetail(e){
+    wx.navigateTo({
+      url: '/pages/detail/detail?id='+e.detail,
     })
   },
   /**

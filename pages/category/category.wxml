@@ -1,37 +1,37 @@
 <view class="category">
     <view class="header-search">
         <view class="search-box">
-            <span class="iconfont icon-soushuo"></span>
-            <span>搜索朋友圈的好货</span>
+            <text class="iconfont icon-soushuo"></text>
+            <text>搜索朋友圈的好货</text>
         </view>
     </view>
     <!-- 分类列表 -->
     <view class="category-content">
         <view class="catogory-left">
-            <view class="left-button" 
-            wx:for="{{leftNav}}" 
-            wx:key="index" 
-            data-id="{{item.id}}" 
+            <view class="left-button"
+            wx:for="{{leftNav}}"
+            wx:key="index"
+            data-id="{{item.id}}"
             bindtap="handleSelection">
-                <span 
+                <text
                 class="{{item.id === currentIndex ? 'active' : ''}}  "
-                >{{item.name}}</span>
+                >{{item.name}}</text>
             </view>
         </view>
-        <scroll-view 
-            class="catogory-right" 
+        <scroll-view
+            class="catogory-right"
             scroll-y
             show-scrollbar="false"
             scroll-with-animation="true"
             scroll-top="{{scrollTop}}"
             >
-            <view 
-            class="right-goods" 
-            wx:for="{{rightContent}}" 
-            wx:key="index" 
+            <view
+            class="right-goods"
+            wx:for="{{rightContent}}"
+            wx:key="index"
             >
                 <view class="goods-title">
-                    <span>{{item.title}}</span>
+                    <text>{{item.title}}</text>
                 </view>
                 <item-tab tabs="{{item.list}}" bind:myEvent="toGoodsDetail"></item-tab>
             </view>

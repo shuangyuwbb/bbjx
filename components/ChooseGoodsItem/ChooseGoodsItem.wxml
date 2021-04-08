@@ -1,4 +1,4 @@
-<view class="choose-content">
+<view class="choose-content" data-id="{{data.id}}" bind:tap="onTap">
     <view class="choose-picture">
         <image src="{{data.main_image}}" />
     </view>
@@ -6,13 +6,13 @@
         <view class="top">
             <p>{{data.subtitle}}</p>
             <p>
-                <span>{{data.comment}}</span>
-                <span>{{data.title}}</span>
+                <text>{{data.comment}}</text>
+                <text>{{data.title}}</text>
             </p>
         </view>
         <view class="bottom-price">
-            <span>￥{{data.price}}</span>
-            <span>{{data.tip}}</span>
+            <text>￥{{data.price}}</text>
+            <text>{{data.tip}}</text>
         </view>
     </view>
 </view>

@@ -7,10 +7,10 @@
   border-radius: 30rpx;
   background-color: #ffffff;
 }
-.search-box span:nth-child(1) {
+.search-box text:nth-child(1) {
   color: #cccccc;
   margin: 0 5px;
 }
-.search-box span:nth-child(2) {
+.search-box text:nth-child(2) {
   color: #cccccc;
 }
