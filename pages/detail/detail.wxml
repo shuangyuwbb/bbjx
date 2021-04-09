@@ -25,7 +25,7 @@
         <text>客服</text>
         <text>收藏</text>
         <view class="btn">
-            <text>加入购物</text>
+            <text bind:tap="addCart">加入购物</text>
             <text bind:tap="toBuy">立即购买</text>
         </view>
     </view>

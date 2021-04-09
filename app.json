@@ -10,7 +10,8 @@
     "pages/vip/vip",
     "pages/list/list",
     "pages/buy/buy",
-    "pages/block/block"
+    "pages/block/block",
+    "pages/auth/auth"
   ],
   "window": {
     "backgroundTextStyle": "light",

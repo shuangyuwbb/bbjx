@@ -1,14 +1,17 @@
 <view class="cart">
-    <view class="cart-title">
-        <checkbox></checkbox>
-        <text>悦动运动专营点</text>
+    <view class="cart-title" data-id="{{cart.id}}" bind:tap="bindchange">
+        <radio class="my_radio" checked="{{cart.checked}}" />
+        <text>{{cart.title}}</text>
     </view>
     <view class="cart-info">
-        <image src="https://ftp.bmp.ovh/imgs/2021/04/80bae57111fddd22.png"></image>
+        <image src="{{cart.img}}"></image>
         <view class="cart-info-title">
-            <text>轮滑写趁人六哦比你感谢</text>
-            <text class="price">￥189</text>
-            <view class="cart-count"><text class="sub">-</text>2<text class="add">+</text></view>
+            <text>{{cart.name}}</text>
+            <text class="price">￥{{cart.price}}</text>
+            <view class="cart-count">
+                <text class="sub" bind:tap="sub" data-id="{{cart.id}}" data-count="{{cart.count}}">-</text>{{cart.count}}
+                <text class="add" bind:tap="add" data-id="{{cart.id}}" data-count="{{cart.count}}">+</text>
+            </view>
         </view>
     </view>
 </view>

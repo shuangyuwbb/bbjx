@@ -1,9 +1,9 @@
 <view class="user">
     <view class="header">
         <view id="avatar">
-            <image src="../../images/1.png" id="avatar"></image>
+            <image src="{{userInfo!==null?userInfo.avatar : '../../images/1.png'}}" id="avatar"></image>
         </view>
-        <label for="avatar" bind:tap="bindLogin">点击登录</label>
+        <label for="avatar" bind:tap="login">{{userInfo!==null?userInfo.nickName: '点击登录'}}</label>
     </view>
     <view class="member">
         <view class="member-left-title">

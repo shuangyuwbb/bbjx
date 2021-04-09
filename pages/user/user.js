@@ -1,4 +1,4 @@
-import {login} from '../../utils/asyncwx.js'
+import {login, getUserInfo, bindLogin} from '../../utils/util.js'
 import {http} from '../../request/index'
 Page({
 
@@ -25,30 +25,27 @@ Page({
       {id: 2, img: '../../images/service.svg', name: '宝宝客服'},
       {id: 3, img: '../../images/join.svg', name: '我要加盟'}
     ],
-    list: []
+    list: [],
+    userInfo: null
   },
 
   onShow(){
     this.loadGoodsList()
+    this.loadUserInfo()
   },
 
-  bindLogin(){
-    login().then(res=>{
-      console.log(res);
-      let params = {
-        url: 'user/token',
-        method: 'POST',
-        data: {
-          code: res.code,
-        }
-      }
-      http(params).then(res=>{
-        console.log(res.token)
-        if(res.status === 0){
-          wx.setStorageSync('token',res.token)
-        }
+  loadUserInfo(){
+    getUserInfo().then(res=>{
+      console.log(res)
+      this.setData({
+        userInfo: res.userInfo
       })
     })
+  },
+
+  login(){
+    if(this.data.userInfo !== null)return
+    bindLogin()
   },
 
   loadGoodsList(){

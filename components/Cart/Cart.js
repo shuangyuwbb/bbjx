@@ -4,7 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    cart:{
+      type: Object
+    }
   },
 
   /**
@@ -13,11 +15,27 @@ Component({
   data: {
 
   },
+  ready(){
 
+  },
   /**
    * 组件的方法列表
    */
-  methods: {
 
+  methods: {
+    sub(e){
+      let count = e.currentTarget.dataset
+      this.triggerEvent('subCount', count)
+    },
+
+    add(e){
+      let count = e.currentTarget.dataset
+      this.triggerEvent('addCount', count)
+    },
+
+    bindchange(e) {
+      let { id } = e.currentTarget.dataset
+      this.triggerEvent('changeRadio', id)
+    }
   }
 })

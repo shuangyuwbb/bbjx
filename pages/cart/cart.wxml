@@ -1,4 +1,4 @@
-<view class="cart" wx:if="{{false}}">
+<view class="cart" wx:if="{{!isLogin}}">
     <view class="authorization">
         <view>
             <image src="../../images/cart.jpg"/>
@@ -14,18 +14,15 @@
     </view>
 </view>
 <view wx:else>
-    <cart></cart>
-    <cart></cart>
-    <cart></cart>
-    <cart></cart>
-
+    <view class="contain">
+     <cart wx:for="{{cartList}}" wx:key="index" cart="{{item}}" bind:addCount="add" bind:subCount="sub" bind:changeRadio="changeRadio"></cart></view>
     <view class="bottom-btn">
-        <view class="check">
-            <checkbox></checkbox>
+        <view class="check" bind:tap="bindAllChecked">
+            <radio class="my_radio" checked="{{allChecked}}" />
             <text>全选</text>
         </view>
         <view class="count">
-            <text>合计：￥0</text>
+            <text>合计：￥{{totalPrice}}</text>
             <view class="sumit">结算</view>
         </view>
     </view>

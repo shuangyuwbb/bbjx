@@ -1,4 +1,5 @@
 import {http} from './../../request/index'
+import {checkIsLogin, redirect, showErrorToast} from './../../utils/util'
 Page({
 
   /**
@@ -15,7 +16,6 @@ Page({
     detail:{}
   },
   onLoad(option){
-    console.log(option.id);
     this.setData({
       id: option.id
     })
@@ -40,6 +40,25 @@ Page({
   toBuy(){
     wx.navigateTo({
       url: '/pages/buy/buy?id='+this.data.id,
+    })
+  },
+
+  addCart(){
+    if(!checkIsLogin()){
+      redirect('/pages/auth/auth')
+      return
+    }
+    let params = {
+      url: 'cart',
+      method: 'POST',
+      data:{
+        id: this.data.id,
+        openid: wx.getStorageSync('openid'),
+        num: 1
+      }
+    }
+    http(params).then(res=>{
+      showErrorToast(res.msg)
     })
   }
 })

@@ -1,0 +1,3 @@
+<view>
+    <button open-type="getUserInfo" bindgetuserinfo="login">点击授权</button>
+</view>
