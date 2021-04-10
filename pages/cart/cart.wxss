@@ -26,7 +26,7 @@
 }
 .cart .authorization text:nth-child(3) {
   width: 120rpx;
-  height: 60rpx;
+  height: 120rpx;
   display: flex;
   justify-content: center;
   align-items: center;
